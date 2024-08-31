@@ -1,4 +1,4 @@
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -14,6 +14,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -23,5 +24,18 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "trangchu",
+    pattern: "trangchu/{action=Index}/{id?}",
+    defaults: new {controller="Home", action="Index"}
+);
+
+app.MapControllerRoute(
+    name: "theloai",
+    pattern: "thelloai/{action=Index}/{id?}",
+    defaults: new {controller = "Theloai", action = "Index"}
+);
+
 
 app.Run();
