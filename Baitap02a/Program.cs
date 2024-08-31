@@ -33,7 +33,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "theloai",
-    pattern: "thelloai/{action=Index}/{id?}",
+    pattern: "theloai/{action=Index}/{id?}",
     defaults: new {controller = "Theloai", action = "Index"}
 );
 
