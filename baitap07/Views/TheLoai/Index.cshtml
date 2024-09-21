@@ -7,8 +7,9 @@
     <table class="table">
         <thead>
             <tr>
-            <th>Tên Thể Loại</th>
-            <th>Ngày Tạo</th>
+                <th>Tên Thể Loại</th>
+                <th>Ngày Tạo</th>
+                <th>Chức Năng</th>
             </tr>
         </thead>
         <tbody>
@@ -17,6 +18,10 @@
                 <tr>
                     <td width="30%"> @item.Name</td>
                     <td width="70%"> @String.Format("{0:dd/MM/yyyy}", item.DateCreated)</td>
+                    <td width="40%"><a asp-action="Edit" asp-route-id="@item.Id">Eidt</a>|
+                                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+
                 </tr>
             }
         </tbody>

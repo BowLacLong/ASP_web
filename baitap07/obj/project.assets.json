@@ -8240,11 +8240,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LUAN\\source\\repos\\baitap07\\baitap07.csproj",
+      "projectUniqueName": "C:\\Users\\LUAN\\OneDrive\\Máy tính\\LTW\\ASP_web\\baitap07\\baitap07.csproj",
       "projectName": "baitap07",
-      "projectPath": "C:\\Users\\LUAN\\source\\repos\\baitap07\\baitap07.csproj",
+      "projectPath": "C:\\Users\\LUAN\\OneDrive\\Máy tính\\LTW\\ASP_web\\baitap07\\baitap07.csproj",
       "packagesPath": "C:\\Users\\LUAN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LUAN\\source\\repos\\baitap07\\obj\\",
+      "outputPath": "C:\\Users\\LUAN\\OneDrive\\Máy tính\\LTW\\ASP_web\\baitap07\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

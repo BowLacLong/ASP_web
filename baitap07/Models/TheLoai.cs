@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace baitap07.Models
 {
@@ -6,8 +8,11 @@ namespace baitap07.Models
     {
         [Key] 
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Không được để trống tên thể loại")]
+        [Display (Name= "Thể loại")]
         public string Name { get; set; }
+        [Required(ErrorMessage = "Không đúng định dạng ngày tạo!")]
+        [Display(Name = "Ngày tạo")]
         public DateTime DateCreated { get; set; } = DateTime.Now;
     }
 }
