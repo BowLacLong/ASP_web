@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\baikiemtra02.props" />
+</Project>

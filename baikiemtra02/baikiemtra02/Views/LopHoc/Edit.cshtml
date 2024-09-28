@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@model LopHoc
+
+<div class="container">
+    <h3>Chỉnh sửa</h3>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <form method="post" asp-action="Edit">
+        <div class="form-group">
+            <label asp-for="TenLopHoc">Tên lớp học</label>
+            <input asp-for="TenLopHoc" type="text" class="form-control" />
+            <span asp-validation-for="TenLopHoc" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NamNhapHoc">Năm Nhập Học</label>
+            <input asp-for="NamNhapHoc" type="date" class="form-control" />
+            <span asp-validation-for="NamNhapHoc" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NamRaTruong">Năm Ra Trường</label>
+            <input asp-for="NamRaTruong" type="date" class="form-control" />
+            <span asp-validation-for="NamRaTruong" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="SoLuongSinhVien">Số Lượng Sinh Viên</label>
+            <input asp-for="SoLuongSinhVien" type="number" class="form-control" />
+            <span asp-validation-for="SoLuongSinhVien" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
