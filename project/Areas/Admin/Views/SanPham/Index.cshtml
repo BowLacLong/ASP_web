@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@model IEnumerable<SanPham>
+<div class="container">
+    <form asp-action="Search" method="get">
+        <input type="text" name="searchString" placeholder="Nhập thể loại cần tìm ..."
+               value="@ViewBag.SearchString" />
+        <input type="submit" value="Tìm kiếm" />
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Mô tả</th>
+                <th>Giá tiền</th>
+                <th>Hình ảnh</th>
+                <th>Tên thể loại</th>
+                <th>Tên chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <td>@item.price</td>
+                    <td><img src="@item.ImageUrl" width="200px" /></td>
+                    <td>@item.TheLoai.Name</td>
+                    <td>
+                        <a asp-action="Upsert" asp-route-id="@item.Id">Edit</a>|
+                        <a href="#">Details</a>|
+                        <a class="text-danger" oneclick="xoa(@item.Id, $(this))">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-controller="SanPham" asp-action="Upsert" class="btn btn-primary">Thêm mới</a>
+</div>
+<script>
+    function xoa(id, row) 
+    { 
+        $.ajax({
+            url: 'SanPham/Detele/${id}',
+            type: "POST",
+            success: function (data)
+            {
+                row.closest("tr").remove();
+            }
+        })
+    }
+</script>

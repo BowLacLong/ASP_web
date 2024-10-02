@@ -2,7 +2,30 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@model IEnumerable<SanPham>
+<div class="row">
+    @foreach (var item in @Model)
+    {
+        <div class="col-3 p-3">
+            <div class="card" style="width: 18rem;">
+                <img src="@item.ImageUrl" class="card-img-top" alt="Lỗi">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    @{
+                        string Price = @item.price.ToString("#,0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"));
+                    }
+                    <h4 class="card-title text-danger">@Price đ</h4>
+                    <p class="card-text">@item.Description</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="btn btn-primary">Thêm &#10084;</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="btn btn-danger">Mua Hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
 </div>
