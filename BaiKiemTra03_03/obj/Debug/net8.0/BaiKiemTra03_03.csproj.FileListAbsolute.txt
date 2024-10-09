@@ -1,0 +1,10 @@
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.csproj.AssemblyReference.cache
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.AssemblyInfoInputs.cache
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.AssemblyInfo.cs
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.csproj.CoreCompileInputs.cache
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.RazorAssemblyInfo.cache
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.RazorAssemblyInfo.cs
+C:\Users\LUAN\OneDrive\Máy tính\LTW\ASP_web\BaiKiemTra03_03\obj\Debug\net8.0\BaiKiemTra03_03.sourcelink.json
