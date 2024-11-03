@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Detail";
+}
+
+@model TheLoai
+
+<div class="container text-white">
+    Id:<b>@Model.Id</b> <br />
+    Tên:<b>@Model.Name</b> <br />
+    Ngày tạo:<b>@String.Format("{0:dd/MM/yyyy}", Model.DateCreated)</b> <br />
+
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</div>
+
+
